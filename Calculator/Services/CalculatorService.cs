@@ -12,5 +12,10 @@ namespace Calculator.Services
         {
             return num1 + num2;
         }
+
+        public bool isEven(int num)
+        {
+            return num % 2 == 0;
+        }
     }
 }
