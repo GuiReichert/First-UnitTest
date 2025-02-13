@@ -98,5 +98,15 @@ public class CalculatorServiceTests
     }
 
 
+    [Theory]
+    [InlineData(new int[] { 1, 3, 5, 7 })]
+    [InlineData(new int[] { 13, 77, 69 })]
+    public void MustCheckIfNumbersAreOddAndReturnTrue(int[] numbers)
+    {
+        // Act + Assert
+
+        Assert.All(numbers, x=> Assert.True(_calculatorService.isOdd(x)));
+    }
+
 
 }

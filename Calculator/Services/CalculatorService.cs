@@ -17,5 +17,10 @@ namespace Calculator.Services
         {
             return num % 2 == 0;
         }
+
+        public bool isOdd (int num)
+        {
+            return num % 2 != 0;
+        }
     }
 }
